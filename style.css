@@ -1,0 +1,195 @@
+:root {
+  --main-txt-color: rgba(116, 116, 116, 0.9);
+  --main-bg-color: #5d5e60;
+  --main-container-color: #0A0902;
+  --interact-txt-color: #FFFDF7;
+  --btn-bg-on-hover: #0f0f0f;
+}
+
+* {
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 1.5rem; 
+  line-height: 2;
+}
+
+body,
+canvas {
+  position: absolute;
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: var(--main-bg-color);
+}
+
+/* Estilo del Header */
+header {
+  width: 100%;
+  height: 108px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--main-container-color);
+  padding: 0 20px; 
+  box-sizing: border-box;
+}
+
+.header_logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  padding: 0.75vw;
+  border: 0.35vh solid var(--main-bg-color);
+  border-radius: 10% 25%;
+  width: 3.5rem;
+  height: 2rem;
+  flex-shrink: 0;
+}
+
+.header_info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+  color: var(--interact-txt-color);
+  font-size: 24px; 
+}
+
+.author {
+  margin: 0;
+  color: var(--interact-txt-color);
+  font-size: 18px; 
+}
+/* Fin Estilo del Header */
+
+/* Estilo del main */
+main {
+  width: 100%;
+  height: 73.6vh;
+  display: flex;
+}
+
+.section_interact {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.entered_text {
+  padding: 24px; 
+  text-align: center;
+  background-color: var(--main-container-color);
+  border: none;
+  border-radius: 24px; 
+  color: var(--interact-txt-color);
+  margin-top: 20px; 
+  width: 80%; 
+  height: 70%; 
+}
+
+.section_result {
+  margin-top: 10px; 
+  width: 35%; 
+  height: 85vh;
+  display: block;
+}
+
+.result {
+  background-color: var(--main-container-color);
+  width: 65%; 
+  height: 85.6%; 
+  border: none;
+  border-radius: 27px; 
+  margin-left: 50px; 
+  padding: 10px 20px 100px 20px; 
+}
+
+.result_text {
+  width: 100%;
+  height: 95%;
+  text-align: center;
+  background-color: rgba(26, 23, 23, 0.2);
+  background-image: url(images/persona.png);
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  color: var(--interact-txt-color);
+}
+
+.info {
+  margin-top: 20px; 
+  width: 100%;
+}
+
+.simbolo {
+  padding-left: 48px; 
+  width: 1rem; 
+  height: 1rem; 
+  color: rgba(26, 23, 23, 0.9);
+}
+
+.informacion {
+  display: inline;
+  color: #d8dfe8;
+  font-size: 24px; 
+}
+
+/* Fin Estilo del main */
+
+/* Estilo del footer-botones */
+footer {
+  width: 65%; 
+  height: 13vh;
+}
+
+.container_btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.btn {
+  position: relative;
+  display: block;
+  color: var(--interact-txt-color);
+  font-size: 20px; 
+  text-decoration: none;
+  letter-spacing: 2px; 
+  border: 3px solid var(--btn-bg-on-hover);
+  border-radius: 50px; 
+  padding: 10px 30px; 
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.3s all ease;
+}
+
+.btn::before {
+  background: var(--btn-bg-on-hover);
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: all 0.45s ease;
+}
+
+.btn1::before {
+  width: 100%;
+  height: 0%;
+}
+
+.btn1:hover::before {
+  height: 100%;
+}
+  /*Fin Estilo del footer-botones*/

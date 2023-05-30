@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encriptador - Challenge ONE Alura">
+    <meta name="keywords" content="alura, encriptador, desencriptador, challenge, challenge ONE, ONE, G5 - ONE">
+    <meta name="author" content="Alejandro Jose Pimentel Ortega">
+    <link rel="shortcut icon" href="images/pngwing.com (1).png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <title>Encriptador - Challenge ONE Alura</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header_logo">
+            <img class="logo" src="images/logo-aluraespanhol.svg" alt="Logo de Alura">
+        </div>
+        <div class="header_info">
+            <h1 class="title">Encriptador - Challenge ONE Alura</h1>
+            <h3 class="author">Hecho por: Alejandro Jose Pimentel Ortega</h3>
+        </div>
+    </header>
+    
+    <main>
+        <section class="section_interact">
+            <textarea class="entered_text" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="info">
+                <img class="simbolo" src="images/tooltip.svg" alt="Tooltip del texto a encriptar/desencriptar">
+                <p class="informacion">Solo letras minúsculas y sin acentos</p>
+            </div>
+        </section>
+
+        <section class="section_result">
+            <div class="result">
+                <textarea id="input" class="result_text" cols="20" rows="10" readonly>No se ha ingresado un mensaje</textarea>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container_btn">
+            <a href="#" onclick="encriptar()" class="btn btn1"><span>Encriptar</span></a>
+            <a href="#" onclick="desencriptar()" class="btn btn1"><span>Desencriptar</span></a>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
